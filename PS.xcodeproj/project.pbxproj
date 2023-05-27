@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C56EEC782A2089DC0048124D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56EEC772A2089DC0048124D /* main.swift */; };
+		C56EEC882A224A060048124D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56EEC872A224A060048124D /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,12 @@
 		C56EEC652A1FC58F0048124D /* PS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PS; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56EEC682A1FC58F0048124D /* BOJ 1번 - 연산.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BOJ 1번 - 연산.swift"; sourceTree = "<group>"; };
 		C56EEC732A1FCC100048124D /* BOJ 2480.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BOJ 2480.swift"; sourceTree = "<group>"; };
-		C56EEC772A2089DC0048124D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C56EEC772A2089DC0048124D /* BOJ 15552.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BOJ 15552.swift"; sourceTree = "<group>"; };
+		C56EEC792A223F790048124D /* BOJ 11022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BOJ 11022.swift"; sourceTree = "<group>"; };
+		C56EEC7B2A2242370048124D /* BOJ 2438.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BOJ 2438.swift"; sourceTree = "<group>"; };
+		C56EEC822A2244B70048124D /* BOJ 10952.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BOJ 10952.swift"; sourceTree = "<group>"; };
+		C56EEC842A2245AD0048124D /* BOJ 10951.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BOJ 10951.swift"; sourceTree = "<group>"; };
+		C56EEC872A224A060048124D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 		C56EEC672A1FC58F0048124D /* PS */ = {
 			isa = PBXGroup;
 			children = (
+				C56EEC862A2249F40048124D /* BOJ 4번 */,
 				C56EEC762A2089AE0048124D /* BOJ 3번 */,
 				C56EEC722A1FCBFE0048124D /* BOJ 2번 */,
 				C56EEC6F2A1FC99A0048124D /* BOJ 1번 */,
@@ -87,10 +93,23 @@
 		C56EEC762A2089AE0048124D /* BOJ 3번 */ = {
 			isa = PBXGroup;
 			children = (
-				C56EEC772A2089DC0048124D /* main.swift */,
+				C56EEC772A2089DC0048124D /* BOJ 15552.swift */,
+				C56EEC792A223F790048124D /* BOJ 11022.swift */,
+				C56EEC7B2A2242370048124D /* BOJ 2438.swift */,
+				C56EEC822A2244B70048124D /* BOJ 10952.swift */,
+				C56EEC842A2245AD0048124D /* BOJ 10951.swift */,
 			);
 			name = "BOJ 3번";
 			path = "BOJ 3번";
+			sourceTree = "<group>";
+		};
+		C56EEC862A2249F40048124D /* BOJ 4번 */ = {
+			isa = PBXGroup;
+			children = (
+				C56EEC872A224A060048124D /* main.swift */,
+			);
+			name = "BOJ 4번";
+			path = "BOJ 4번";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +144,7 @@
 				TargetAttributes = {
 					C56EEC642A1FC58F0048124D = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -151,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C56EEC782A2089DC0048124D /* main.swift in Sources */,
+				C56EEC882A224A060048124D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +294,13 @@
 		C56EEC6D2A1FC58F0048124D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SNYPHGS3ZB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -285,10 +308,12 @@
 		C56EEC6E2A1FC58F0048124D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SNYPHGS3ZB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
